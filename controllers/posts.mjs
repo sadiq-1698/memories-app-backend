@@ -33,6 +33,6 @@ export const updatePost = async (req, res) => {
 
     const updatedPost = await PostMessage.findByIdAndUpdate(_id, post, { new : true});
 
-    res.json(updatedPost);
+    return res.json(updatedPost);
 
 }
